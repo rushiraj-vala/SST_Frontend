@@ -1,0 +1,55 @@
+.main_window {
+    background-color: red;
+    font-family: 'Segoe-UI', 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-container{
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+    
+.button {
+    background-color:white ;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: white;
+}
+
+.containerButton{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerIcon{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}

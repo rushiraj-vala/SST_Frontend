@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Window</title>
+    <link rel="stylesheet" href="gallerystyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <header id="pageHeader">
+        <div id="searchBar" class="searchBar">
+            <div id="searchIcon" class="searchIcon">
+                <i class="material-icons" style="font-size: xx-large;">search</i>
+            </div>
+            <input type="search" id="searchBox" class="searchBox" />
+            <div id="searchFilter" class="searchFilter">
+                <i class="material-icons" style="font-size: xx-large;">tune</i>
+            </div>
+        </div>
+        <div id="connection status" class="connectionStatus">
+            <i class="material-icons" style="font-size: x-large;">link</i>
+        </div>
+        <div id="accountButton" class="accountButton">
+            <div style="align-items: center; justify-content: center;"><label style="font-size: x-large; font-family: 'Segoe UI'; text-align: center;font-weight: 700; " >A</label></div>
+        </div>
+    </header>
+
+
+    <!-- Main Area -->
+    <article id="mainArticle">
+        <div id="menuBarArticle" class="menuBarArticle">
+            <div id="menuItem" class="menuItem">
+                <div id="containerMasterCheckBox" class="containerMasterCheckBox">
+                    <input type="checkbox" id="masterCheckBox">
+                    <div id="dropDownCheckBox" class="dropDownCheckBox">
+                        <i class="material-icons" style="font-size: x-small;">arrow_drop_down</i>
+                    </div>
+                </div>
+            </div>
+            <div id="menuItem" class="menuItem">
+                <div id="containerMasterTrashButton" class="containerMasterTrashButton">
+                    <i class="material-icons" style="font-size: medium;">delete</i>
+                </div>
+            </div>
+            <div id="menuItem" class="menuItem">
+                <div id="containerMasterDeleteButton" class="containerMasterDeleteButton">
+                    <i class="material-icons" style="font-size: medium;">delete_forever</i>
+                </div>
+            </div>
+            <div id="menuItem" class="menuItem">
+                <div id="containerRefreshButton" class="containerRefreshButton">
+                    <i class="material-icons" style="font-size: large;">refresh</i>
+                </div>
+            </div>
+            <!-- <div id="menuItem">select button</div>
+            <div id="menuItem ">select button</div> -->
+        </div>
+        <div id="mainPane" class = 'mainPane'>
+            <div id = 'list' class="ListStyle" ></div>
+        </div>
+        <div id = "previewBox" class = "previewBox">
+            <div id="topPreviewBox" class="topPreviewBox">
+                <div id="reRecognizeButton" class="reRecognizeButton">
+                    <i class="material-icons" style="margin-left: 10px;margin-right: 10px ;font-size: xx-large;">refresh</i>
+                </div>
+                <div id="closeEditorButton" class="reRecognizeButton">
+                    <i class="material-icons" style="margin-left: 10px;margin-right: 10px ;font-size: xx-large;">close</i>
+                </div>
+            </div>
+            <div id ='bottomPreviewBox' class="bottomPreviewBox" >
+                <div id="imageBox" class="imageBox">
+                    <img id="imageBoxArea" class="imageBoxArea"/>
+                </div>
+                <div id="textBox" class="textBox">
+                    <textarea id="textArea" class="textArea"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div id = 'listOverlay' class="listOverlay"></div>
+    </article>
+
+    <nav id="mainNavBar" class="mainNavBar">
+        <div id="logoContainer" class="logoContainer">
+            <div style="align-content: center;justify-content: center;">
+                <img src="../../assets/snipping_icon.png" style="height: 50px; width: 50px;" />
+            </div>
+            <div style="margin: 10px;align-content: center;justify-content: center; background-color: transparent;">Smart Snipping Tool</div>
+        </div>
+        <div id="containerAddNew" class="containerAddNew">
+            <div>
+                <i class="material-icons" style="font-size: xx-large;">add</i>            
+            </div>
+            <div style="background-color: transparent;font-size: x-large;font-weight: 600;margin-left: 10px;font-family: 'Segoe UI';align-self: center;">
+                New
+            </div>
+        </div>
+        <div id="addNavBar" class="addNavBar">
+            <div class="leftNavBarIcon">
+                <i class="material-icons" style="font-size: small;">grid_view</i>
+            </div>
+            <div class="middleNavBarIcon">Gallery</div>
+            <div class="rightNavBarIcon">###</div>
+        </div>
+        <div id="groupsNavBar" class="groupsNavBar">
+            <div class="leftNavBarIcon">
+                <i class="material-icons" style="font-size: small;">group</i>
+            </div>
+            <div class="middleNavBarIcon">Groups</div>
+            <div class="rightNavBarIcon">###</div>
+        </div>
+        <div id="trashNavBar" class="trashNavBar">
+            <div class="leftNavBarIcon">
+                <i class="material-icons" style="font-size: small;">delete</i>
+            </div>
+            <div class="middleNavBarIcon">Trash</div>
+            <div class="rightNavBarIcon">###</div>
+        </div>
+        
+        <!-- <a href="/html/">HTML</a> 
+        <a href="/html/">HTML</a> 
+        <a href="/html/">HTML</a> 
+        <a href="/html/">HTML</a>  -->
+    </nav>
+    <footer id="pageFooter">Footer</footer>
+</body>
+<script src="./Gallery.js" ></script>
+</html>

@@ -1,0 +1,131 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.overlay1{
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(150, 150, 150, 0.5);
+    transition: width , height;
+}
+
+.overlay2{
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(150, 150, 150, 0.5);
+    transition: width , height;
+}
+
+.overlay3{
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(150, 150, 150, 0.5);
+    transition: width , height;
+}
+
+.overlay4{
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(150, 150, 150, 0.5);
+    transition: width , height;
+}
+
+.vertical{
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    top:0;
+    left:0;
+    width: 0.2%;
+    height: 100%;
+    background-color: firebrick ;
+    transition: left;
+}
+
+.horizontal{
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 0.2%;
+    background-color: firebrick ;
+    transition: top;
+}
+
+.overlaytest{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 1);
+    transition: width , height;
+}
+
+.borderrect{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left:0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid yellowgreen;
+    transition: left,top, width, height;
+}
+
+.check-circle-button{
+    position: absolute;
+    align-items: center;
+    margin: 0;
+    top: -80;
+    left: -80;
+    background-color: lightslategray;
+    padding: 6px 6px;
+    transition: all;
+}
+
+.cross-circle-button{
+    position: absolute;
+    align-items: center;
+    margin: 0;
+    top: -80;
+    left: -80;
+    padding: 6px 6px;
+    background-color: lightslategray;
+    transition: all;
+}
+
+.check-image{
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}

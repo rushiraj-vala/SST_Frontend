@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Window</title>
+    <link rel="stylesheet" href="captureStyle.css">
+</head>
+
+<body>
+    <div id = 'main'>
+        <div id='verticalLine' class="vertical"></div>
+        <div id='horizontalLine' class="horizontal"></div>
+        <div id='borderRect' class='borderrect'></div>
+        <!-- <div id ='test'  class="overlaytest"></div> -->
+        <div id ='overlayTopLeft'  class="overlay1"></div>
+        <div id ='overlayTopRight'  class="overlay2"></div>
+        <div id ='overlayBottomLeft'  class="overlay3"></div>
+        <div id ='overlayBottomRight'  class="overlay4"></div>
+        <img id = 'screenshot-imaged' width="100%" /><br />
+        <button ID='checkCircleButton' class='check-circle-button' >
+            <img src='../../assets/check_mark.png' class="check-image"/>
+        </button>
+        <button ID='crossCircleButton' class='cross-circle-button' >
+            <img src='../../assets/cross_mark.png' class="check-image"/>
+        </button>
+        <canvas></canvas>
+    </div>
+    <script src="capture.js"></script>
+</body>
+</html>

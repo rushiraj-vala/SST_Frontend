@@ -1,0 +1,9 @@
+test_build/
+node_modules/
+node_modules/electron/dist/electron.exe
+dist2/
+backend/
+out/
+temp/
+dist2.zip
+engine/

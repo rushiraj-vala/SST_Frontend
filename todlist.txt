@@ -1,0 +1,50 @@
+every lines is seperated and indented
+
+problem : creaet a widget that displays multiline text (because can only insert in one line)
+    sol : (textbox does not inherently allow inserting at any row, instead go through each num and add that man \n to the string)
+
+problem : The text on same line is also displayed in new lines some times
+    sol : from OCR get the distance from top check the change in distance if significant
+         then a line otherwise same line
+
+Problem : Cannot add new entry into the dataframe
+    sol : create a dict first and then add
+            no append func
+
+Problem:  
+Problem: the sorted array is taking values of the last row instead of the previous row
+
+Problem: The values are corrected by the grouping is not working
+
+Problem: real time update in gallery
+
+Features:
+ -> reactive window of image
+ -> reactive text area
+ -> Undo
+ -> tools in text area: RESET, 
+
+
+Major overhaul:
+
+-> Shift the frontend to react
+
+
+Electron:
+-> ScreenCapture
+    -> Create a button that calls screenShot()
+    -> Create a screenShot() -> calls ipcMain thread to run a capture func
+    -> Create a CaptureScreen() -> getPrimaryDisplay->get height, width ->  await use desktopCapturer (given in options)-> find source -> access thumbnai() -> return image
+    -> CaptureScreen() -> window.webContent.on('had-finish-load') -> window.webContent.send('apikey',imageURL)
+
+-> add screen snip options
+: done
+
+-> Send the image to python backend: done
+    -> Image being sent is in base64 , try to send image as object along with name: 
+    - when sending image as an blob which should be used png or jpeg
+    - MIME argument
+
+-> add animations
+
+-> update the first screen: done (use a div that is top,bottom,left,right - 0 with flex property - children button are 100% height and width % )

@@ -1,0 +1,41 @@
+problem: npm start not working
+sol: change the directory move where package json is
+
+problem: npm start works but app does not load,
+sol: use app.on('ready') instead of app.whenready()
+
+problem: creating multiple button make the first button on click run eventListner mutliple times
+sol: only use one <script></script> tag
+
+problem: Create a child window and have no menubar in it for now
+sol: instead of creating a child window in RENDERER.JS use ipcMain to communicate between
+
+problem: Creating a child window using ipcRenderer is not working, in fact button press is not working all together
+sol: the require does not work outside main window, used nodeIntegeration nothing happens, used contextIsolation -> worked
+
+problem: cannot pass mainWindow as a parameter to childWindowCreate()
+sol: create a global variable let window
+
+problem: cannot read properties of undefined: captureScreenShot()
+attempt: create isolated test build :
+-> problem: cannot preload file preload.js
+-> sol: My mistake was using contextbridge.exposeInIsolation instead of context.bridge.exposeInMainWorld
+->->-> Use contextIsolation:True, nodeIntegration:False, in webpreferences
+
+problem: How to use Deskcapture and send the image to the new window. Both task to be accomplished by single button click
+
+sol: use contextBridge ()=>{which a func:ipcRenderer.send('command')} to create an API call which is called by rendere js
+
+problem: document.getElementById('screenshot-image') cannot find the element created in new window and set it to src.
+sol: Change the scripts and create new scripts for each window.
+
+problem: capture.js cannot access the function of window, it had no problem doing so on main window
+sol: use window.webContents.send() -> to send data to Preload -> callback()=>{(event,data)=>{ do something with data}}
+
+problem: when sending 'simple text message' it is getting recieved by the ipcRenderer but when sending dataURL of image it does not recieve it ?
+
+problem: the ipcRenderer.on listener sometimes works and underlying function runs sometimes
+
+solution: The message is sent before the window is finished loading, so used window.webContent.on('did-finish-load', ()=>{ sender here })
+
+problem: The mouse is captured as well during the desktop capture

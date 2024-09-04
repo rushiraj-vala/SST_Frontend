@@ -1,0 +1,16 @@
+{
+  "name": "image_smart_board",
+  "productName": "Smart snipping tool",
+  "version": "1.0.8",
+  "description": "app to grab screen and run ",
+  "main": "main.js",
+  "author": "Rushiraj Vala",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "request": "^2.88.2",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.6",
+    "toastify-js": "^1.12.0"
+  }
+}

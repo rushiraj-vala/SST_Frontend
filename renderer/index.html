@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy"
+    content="connect-src 'self' http://127.0.0.1:8765/ ; img-src 'self' data:"
+    />
+
+    <meta http-equiv="X-Content-Security-Policy"
+    content="connect-src 'self' http://127.0.0.1:8765/ ;img-src 'self' data:" 
+    />
+
+    <title>Smart snipping tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="main_window">
+    <!-- <img id = 'screenshotold-image' width="100%" /><br /> -->
+    <div class="btn-container" >
+        <div id="containerButton1" class="containerButton">
+            <div id="containerIcon1" class="containerIcon">
+                    <i class="material-icons" style="margin-left: 10px;margin-right: 2px ;font-size: small;">add</i>
+            </div>      
+            <div id="Button1" class="button">
+                Capture
+            </div>
+        </div>
+        <div id="containerButton1" class="containerButton">
+            <div id="containerIcon1" class="containerIcon">
+                <i class="material-icons" style="margin-left: 10px;margin-right: 2px ;font-size: small;">upload</i>
+            </div>            
+            <div id="Button2" class="button">
+                Upload
+            </div>
+        </div>
+
+        <div id="containerButton1" class="containerButton" >
+            <div id="containerIcon1" class="containerIcon">
+                <i class="material-icons" style="margin-left: 10px;margin-right: 2px ;font-size: small;">grid_view</i>
+            </div>                        
+            <div id="Button3" class="button">
+                Gallery
+            </div>
+        </div>
+
+    </div>
+
+    <script src="renderer.js" >
+    </script>
+
+</body>
+
+</html>
